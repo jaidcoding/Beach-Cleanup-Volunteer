@@ -8,23 +8,30 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
 <body>
   <!--Make a Nav Bar maybe a logo on the left side and options on the right-->
-  <div class="nav">
-    <a href="#ourTeam">Our Team</a>
-    <a href="#ourMission">Our Mission</a>
-    <a href="#signUp">Sign Up</a>
-    <a href="#contactUs">Contact Us</a>
+  <div class="wrapper side-panel-open">
+    <div class="main">
+      main content
+    </div>
+    <button class="side-panel-toggle" type="button">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+    <div class="side-panel">
+      <a href="#ourTeam">Our Team</a>
+      <a href="#ourMission">Our Mission</a>
+      <a href="#signUp">Sign Up</a>
+      <a href="#contactUs">Contact Us</a>    </div>
   </div>
   <!--Photo banner with text in the middle-->
   <div class="banner">
     <div class="bannerImage">
-      <img id="bannerImage" src="https://images.pexels.com/photos/10595120/pexels-photo-10595120.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 alt="beach">
-    </div>
-    <div class="bannerText">
-      <h1>Beach Clean-up</h1>
-      <h2>Volunteer</h2>
+      <img id="bannerImage" src="https://images.pexels.com/photos/10595120/pexels-photo-10595120.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="beach">
+      <div class="bannerText">
+
+      </div>
     </div>
   </div>
   <!--Cards of the founders of the site with their descriptions-->
@@ -41,5 +48,9 @@
   </div>
   <!--contact us-->
   <div class="contactUs" id="contactUs">
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
