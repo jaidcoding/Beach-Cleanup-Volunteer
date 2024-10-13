@@ -139,13 +139,12 @@ nav a:hover {
   margin-right: 20px;
   text-align: justify;
 }
-
 .content-area {
   width: 100%;
   height: 800px;
   position: relative;
   background: white;
-  top: 600px;
+  top: 200px;
 }
 
 .content-area h2 {
