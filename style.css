@@ -28,10 +28,10 @@ body {
 header {
   width: 100%;
   height: auto;
-  background-color: white;
   position: fixed;
   z-index: 10;
-  background-color: whitesmoke;
+  background-color: ghostwhite;
+  border-bottom: 1px solid #555;
 }
 
 .logo {
@@ -48,6 +48,7 @@ nav {
   float: right;
   display: flex;
   align-items: baseline;
+  margin-bottom: 10px;
 }
 
 nav ul {
@@ -60,7 +61,7 @@ nav ul {
 }
 
 nav li {
-  margin: 20px;
+  margin: 15px;
   padding: 10px;
 }
 
@@ -79,76 +80,59 @@ nav a:hover {
   font-weight: 200;
 }
 
+.banner-area {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 70px;
+}
+
 .banner-area img {
   background-size: cover;
   background-position: center;
   width: 100%;
+  height: 80vh;
   position: absolute;
   z-index: -1;
-  height: 100vh;
 }
 
-.banner-area h2 {
-  margin-left: 5px;
-  margin-right: 5px;
-  text-align: center;
-  color: white;
-  font-size: 80px;
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-}
-
-.ourTeam {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.content-area {
+  padding: 2%;
+  margin-top: 50px;
   width: 100%;
-  background-color: white;
+  background: white;
+  top: 200px;
 }
 
-.ourTeam h2 {
+.content-area h2 {
   text-align: center;
   font-size: 50px;
-  margin: 50px;
-  letter-spacing: 2px;
-  text-decoration: underline;
-}
-
-.ourTeam img {
-  width: 300px;
-  height: 300px;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  border-radius: 50%;
-  margin-top: 30px;
-}
-
-.card-body h5 {
-  text-align: center;
-  font-size: 25px;
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
   letter-spacing: 2px;
-  text-decoration: underline;
 }
 
-.card-body p {
+.content-area p {
   color: black;
   justify-content: center;
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
   padding: 2% 0;
-  margin-left: 20px;
-  margin-right: 20px;
+  line-height: 30px;
   text-align: justify;
 }
 
+#carouselExampleIndicators {
+  margin-left: 6.7%;
+  margin-right: 6.7%;
+}
+
+
 form {
+  border: #555 solid 1px;
+  margin: 0 auto;
   background-color: white;
   padding: 20px;
   border-radius: 8px;
@@ -158,15 +142,9 @@ form {
   margin-top: 50px;
 }
 
-.ourTeam h2 {
-  position: relative;
+form h2 {
   text-align: center;
-  font-size: 50px;
-  margin: 50px;
-  letter-spacing: 2px;
-  text-decoration: underline;
-  color: black;
-
+  margin-bottom: 20px;
 }
 
 form div {
@@ -208,27 +186,46 @@ button:hover {
   color: #555;
 }
 
-.content-area {;
-  width: 100%;
-  background: white;
-  top: 200px;
-  margin-bottom: auto;
-}
-
-.content-area h2 {
-  text-align: center;
-  font-size: 50px;
-  margin: 0;
-  padding-top: 30px;
-  letter-spacing: 2px;
-}
-
-.content-area p {
+footer {
+  background-color: ghostwhite;
   color: black;
-  justify-content: center;
-  font-size: 20px;
+  padding: 20px 0;
   text-align: center;
-  padding: 2% 0;
-  line-height: 30px;
-  text-align: justify;
+  width: 100%;
+  bottom: 0;
+  position: relative;
+  margin-top: 50px;
+  border: #555 solid 1px;
+}
+
+.footer-content {
+  margin-bottom: 20px;
+}
+
+.footer-content h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.footer-content p {
+  margin: 10px 0;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-content li {
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  border-top: 1px solid #555;
+  padding: 10px 0;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
 }
