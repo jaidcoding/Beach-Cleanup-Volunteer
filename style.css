@@ -8,7 +8,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #FAF3E0; /* Light sandy beige */
+  background-color: #F4F4F4; /* Neutral off-white */
   color: #333;
 }
 
@@ -18,12 +18,16 @@ header {
   position: fixed;
   top: 0;
   z-index: 10;
-  background-color: #ffffff; /* Light turquoise */
-  border-bottom: 2px solid #FF6F61; /* Coral */
+  background-color: #ffffff;
+  border-bottom: 2px solid #0074D9; /* Muted blue */
   display: flex;
   align-items: center;
   padding: 0 20px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+header:hover {
+  background-color: #E8F0FE; /* Light hover effect */
 }
 
 .logo {
@@ -32,11 +36,12 @@ header {
 
 .logo img {
   width: 80px;
-  transition: transform 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
 }
 
 .logo img:hover {
   transform: scale(1.1);
+  opacity: 0.9;
 }
 
 nav {
@@ -57,25 +62,26 @@ nav li {
 
 nav a {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: normal;
-  color: #FF6F61; /* Coral */
+  color: #0074D9; /* Muted blue */
   padding: 10px;
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
 nav a:hover {
-  background-color: #FF886E; /* Lighter coral */
+  background-color: #38B2AC; /* Light teal */
   color: #fff;
   transform: translateY(-2px);
+  text-decoration: underline;
 }
 
 .banner-container {
   position: relative;
   text-align: center;
   color: #ffffff;
-  margin-top: 60px;
+  margin-top: 100px;
 }
 
 .banner-image {
@@ -97,7 +103,7 @@ nav a:hover {
 
 .banner-text:hover {
   transform: translate(-50%, -50%) scale(1.05);
-  color: #48CAE4; /* Soft turquoise */
+  color: #38B2AC; /* Soft turquoise */
 }
 
 @media (max-width: 768px) {
@@ -105,7 +111,7 @@ nav a:hover {
       font-size: 2em;
   }
   .banner-container {
-      margin-top: 60px;
+      margin-top: 80px;
   }
   nav a {
       font-size: 20px;
@@ -133,12 +139,12 @@ nav a:hover {
   font-size: 50px;
   margin: 0;
   letter-spacing: 2px;
-  color: #0077B6; /* Ocean blue */
+  color: #0074D9; /* Ocean blue */
   transition: color 0.3s;
 }
 
 .content-area h2:hover {
-  color: #48CAE4; /* Soft turquoise */
+  color: #38B2AC; /* Soft turquoise */
 }
 
 .content-area p {
@@ -176,13 +182,13 @@ form {
 }
 
 form:hover {
-  box-shadow: 0 4px 20px rgb(0, 0, 0);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 form h2 {
   text-align: center;
   margin-bottom: 20px;
-  color: #0077B6; /* Ocean blue */
+  color: #0074D9; /* Ocean blue */
 }
 
 form div {
@@ -205,8 +211,8 @@ textarea {
 
 input:focus,
 textarea:focus {
-  border-color: #48CAE4; /* Soft turquoise */
-  box-shadow: 0 0 5px rgba(72, 202, 228, 0.5);
+  border-color: #38B2AC; /* Soft turquoise */
+  box-shadow: 0 0 5px rgba(56, 178, 172, 0.5);
 }
 
 input[type="file"] {
@@ -214,7 +220,7 @@ input[type="file"] {
 }
 
 button {
-  background-color: #FF6F61; /* Coral */
+  background-color: #0074D9; /* Muted blue */
   color: white;
   padding: 10px 20px;
   border: none;
@@ -224,7 +230,7 @@ button {
 }
 
 button:hover {
-  background-color: #FF886E; /* Lighter coral */
+  background-color: #38B2AC; /* Light teal */
   transform: translateY(-2px);
 }
 
@@ -234,8 +240,8 @@ button:hover {
 }
 
 footer {
-  background-color: #F1E3D3; /* Sand beige */
-  color: black;
+  background-color: #333; /* Charcoal */
+  color: white;
   padding: 20px 0;
   text-align: center;
   width: 100%;
@@ -252,7 +258,7 @@ footer {
 .footer-content h2 {
   margin: 0;
   font-size: 24px;
-  color: #0077B6; /* Ocean blue */
+  color: #ffffff;
 }
 
 .footer-content p {
@@ -276,4 +282,5 @@ footer {
 .footer-bottom p {
   margin: 0;
   font-size: 14px;
+  color: #ccc;
 }
