@@ -8,7 +8,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #f0f4f8;
+  background-color: #FAF3E0; /* Light sandy beige */
   color: #333;
 }
 
@@ -18,8 +18,8 @@ header {
   position: fixed;
   top: 0;
   z-index: 10;
-  background-color: #ffffff;
-  border-bottom: 2px solid #4CAF50;
+  background-color: #ffffff; /* Light turquoise */
+  border-bottom: 2px solid #FF6F61; /* Coral */
   display: flex;
   align-items: center;
   padding: 0 20px;
@@ -59,14 +59,14 @@ nav a {
   text-decoration: none;
   font-size: 25px;
   font-weight: normal;
-  color: #4CAF50;
+  color: #FF6F61; /* Coral */
   padding: 10px;
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
 nav a:hover {
-  background-color: #81C784;
+  background-color: #FF886E; /* Lighter coral */
   color: #fff;
   transform: translateY(-2px);
 }
@@ -81,11 +81,12 @@ nav a:hover {
 .banner-image {
   width: 100%;
   height: auto;
+  aspect-ratio: 2 / 1;
 }
 
 .banner-text {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 3em;
@@ -96,7 +97,7 @@ nav a:hover {
 
 .banner-text:hover {
   transform: translate(-50%, -50%) scale(1.05);
-  color: #51c1d4;
+  color: #48CAE4; /* Soft turquoise */
 }
 
 @media (max-width: 768px) {
@@ -118,7 +119,7 @@ nav a:hover {
 }
 
 .content-area {
-  padding: 2%;
+  padding: 20px;
   margin-top: 50px;
   width: 100%;
   background: #ffffff;
@@ -132,21 +133,33 @@ nav a:hover {
   font-size: 50px;
   margin: 0;
   letter-spacing: 2px;
-  color: #4CAF50;
+  color: #0077B6; /* Ocean blue */
   transition: color 0.3s;
 }
 
 .content-area h2:hover {
-  color: #2e7d32;
+  color: #48CAE4; /* Soft turquoise */
 }
 
 .content-area p {
+  margin: 50px;
   color: #555;
   font-size: 20px;
   text-align: center;
   padding: 2% 0;
   line-height: 30px;
   text-align: justify;
+}
+
+.carousel-container {
+  width: 80%; 
+  margin: 0 auto; 
+  padding: 20px 0; 
+}
+
+.carousel-inner img {
+  width: 100%; 
+  height: auto;
 }
 
 form {
@@ -169,7 +182,7 @@ form:hover {
 form h2 {
   text-align: center;
   margin-bottom: 20px;
-  color: #4CAF50;
+  color: #0077B6; /* Ocean blue */
 }
 
 form div {
@@ -192,8 +205,8 @@ textarea {
 
 input:focus,
 textarea:focus {
-  border-color: #4CAF50;
-  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  border-color: #48CAE4; /* Soft turquoise */
+  box-shadow: 0 0 5px rgba(72, 202, 228, 0.5);
 }
 
 input[type="file"] {
@@ -201,7 +214,7 @@ input[type="file"] {
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: #FF6F61; /* Coral */
   color: white;
   padding: 10px 20px;
   border: none;
@@ -211,7 +224,7 @@ button {
 }
 
 button:hover {
-  background-color: #388E3C;
+  background-color: #FF886E; /* Lighter coral */
   transform: translateY(-2px);
 }
 
@@ -221,7 +234,7 @@ button:hover {
 }
 
 footer {
-  background-color: #ffffff;
+  background-color: #F1E3D3; /* Sand beige */
   color: black;
   padding: 20px 0;
   text-align: center;
@@ -239,7 +252,7 @@ footer {
 .footer-content h2 {
   margin: 0;
   font-size: 24px;
-  color: #4CAF50;
+  color: #0077B6; /* Ocean blue */
 }
 
 .footer-content p {
